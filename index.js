@@ -26,15 +26,15 @@
 
 // async function getDogBreeds() {
 //     try {
-//       let response = await fetch("https://dog.ceo/api/breeds/image/random/50");
-//       if (!response) {
+//       let response = await fetch("https://dog.ceo/api/breeds/image/random/50"); // true
+//       if (!response) { //false
 //         throw new Error("Network response was not ok");
 //       }
 //       let data = await response.json();
 //       const body = document.querySelector("body");
 //       body.innerHTML = "<h1 style='text-align:center'>Random Dog Images</h1>";
-//       data.message.forEach((imageUrl) => {
-//         body.innerHTML += `<img src="${imageUrl}" alt="Random dog" style="width: 200px; height:200px; margin: 10px;  border: 1px solid">`;
+//       data.message.forEach((img) => {
+//         body.innerHTML += `<img src="${img}" alt="Random dog" style="width: 200px; height:200px; margin: 10px;  border: 1px solid">`;
 //       });
 //     } catch (error) {
 //       console.log("Error:", error);
